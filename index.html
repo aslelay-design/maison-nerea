@@ -980,7 +980,7 @@
         method: 'POST', body: new FormData(form),
         headers: { Accept: 'application/json' }
       });
-      if (res.ok) { form.reset(); success.classList.add('show'); btn.style.display = 'none'; }
+      if (res.ok) { form.reset(); window.location.href = '/merci'; }
       else { btn.textContent = 'Réessayer →'; btn.disabled = false; }
     } catch { btn.textContent = 'Réessayer →'; btn.disabled = false; }
   });
