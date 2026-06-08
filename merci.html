@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Merci — Maison Nerea</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --navy: #1a2744;
+      --gold: #b8975a;
+      --gold-light: #d4b07a;
+      --cream: #f8f5f0;
+      --white: #ffffff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+    }
+
+    body {
+      background-color: var(--navy);
+      color: var(--white);
+      font-family: 'Jost', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 2rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* Subtle background texture */
+    body::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse at 30% 20%, rgba(184,151,90,0.08) 0%, transparent 60%),
+                  radial-gradient(ellipse at 70% 80%, rgba(184,151,90,0.05) 0%, transparent 50%);
+      pointer-events: none;
+    }
+
+    .container {
+      text-align: center;
+      max-width: 600px;
+      animation: fadeUp 0.9s ease both;
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(24px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    .ornement {
+      display: block;
+      margin: 0 auto 2rem;
+      width: 48px;
+      opacity: 0.9;
+      animation: fadeUp 0.9s ease 0.1s both;
+    }
+
+    .logo {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.1rem;
+      font-weight: 300;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 3rem;
+      animation: fadeUp 0.9s ease 0.15s both;
+    }
+
+    .divider {
+      width: 40px;
+      height: 1px;
+      background: var(--gold);
+      margin: 0 auto 2.5rem;
+      opacity: 0.6;
+      animation: fadeUp 0.9s ease 0.2s both;
+    }
+
+    h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(2rem, 5vw, 3rem);
+      font-weight: 300;
+      line-height: 1.2;
+      letter-spacing: 0.02em;
+      color: var(--white);
+      margin-bottom: 1.5rem;
+      animation: fadeUp 0.9s ease 0.25s both;
+    }
+
+    h1 em {
+      font-style: italic;
+      color: var(--gold-light);
+    }
+
+    p {
+      font-family: 'Jost', sans-serif;
+      font-size: 0.95rem;
+      font-weight: 300;
+      line-height: 1.8;
+      color: rgba(255,255,255,0.7);
+      max-width: 420px;
+      margin: 0 auto 2.5rem;
+      animation: fadeUp 0.9s ease 0.35s both;
+    }
+
+    .retour {
+      display: inline-block;
+      font-family: 'Jost', sans-serif;
+      font-size: 0.78rem;
+      font-weight: 400;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--gold);
+      text-decoration: none;
+      border-bottom: 1px solid rgba(184,151,90,0.35);
+      padding-bottom: 2px;
+      transition: color 0.3s, border-color 0.3s;
+      animation: fadeUp 0.9s ease 0.45s both;
+    }
+
+    .retour:hover {
+      color: var(--gold-light);
+      border-color: var(--gold-light);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- Ornement SVG discret -->
+    <svg class="ornement" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="24" cy="24" r="22" stroke="#b8975a" stroke-width="0.8" opacity="0.5"/>
+      <path d="M24 8 L24 40 M8 24 L40 24" stroke="#b8975a" stroke-width="0.6" opacity="0.3"/>
+      <circle cx="24" cy="24" r="4" stroke="#b8975a" stroke-width="0.8"/>
+      <circle cx="24" cy="24" r="1.5" fill="#b8975a"/>
+    </svg>
+
+    <div class="logo">Maison Nerea</div>
+
+    <div class="divider"></div>
+
+    <h1>Votre message<br>a bien été <em>reçu</em></h1>
+
+    <p>
+      Merci de l'intérêt que vous portez à Maison Nerea.<br>
+      Nous vous répondrons dans les meilleurs délais.
+    </p>
+
+    <a href="/" class="retour">← Retour au site</a>
+
+  </div>
+
+</body>
+</html>
