@@ -152,7 +152,7 @@
     }
     .hero-bg {
       position: absolute; inset: 0;
-      background-image: url('hero.jpg');
+      background-image: url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1600&q=80');
       background-size: cover; background-position: center;
     }
     .hero-bg::after {
@@ -483,6 +483,10 @@
       .hero-stat-divider { display: none; }
     }
     @media (max-width: 600px) {
+      .hero-stats { position: relative; bottom: auto; background: rgba(26,39,68,0.6); padding: 1.5rem 1rem; margin-top: 0; gap: 1rem; }
+      .hero-stat strong { font-size: 1.5rem; }
+      .hero { flex-direction: column; justify-content: flex-start; }
+      .hero-content { padding-bottom: 1rem; }
       section { padding: 4rem 1.25rem; }
       .hero-content { padding: 2rem 1.25rem; }
       .hero-title { font-size: 2.4rem; }
@@ -717,7 +721,7 @@
     <div class="about-grid">
       <div class="about-img-wrap reveal">
         <img
-          src="portrait.jpg"
+          src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&q=80"
           alt="Anne-Sophie Le Lay — Fondatrice Maison Nerea"
           class="about-img"
         />
