@@ -146,14 +146,17 @@ nav.scrolled { box-shadow: var(--shadow); }
 .villa-hero img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
 .villa-hero::after {
   content: ""; position: absolute; inset: 0;
-  background: linear-gradient(180deg, rgba(26,39,68,0.05) 30%, rgba(26,39,68,0.8) 100%);
+  background:
+    linear-gradient(90deg, rgba(26,39,68,0.72) 0%, rgba(26,39,68,0.45) 40%, rgba(26,39,68,0) 70%),
+    linear-gradient(180deg, rgba(26,39,68,0) 40%, rgba(26,39,68,0.6) 100%);
 }
-.villa-hero-content { position: relative; z-index: 1; max-width: 1100px; width: 100%; margin: 0 auto; padding: 3rem 2rem 3.5rem; color: var(--white); }
-.eyebrow { font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--gold-light); margin-bottom: 0.9rem; }
+.villa-hero-content { position: relative; z-index: 1; text-shadow: 0 1px 12px rgba(15,22,40,0.45); max-width: 1100px; width: 100%; margin: 0 auto; padding: 3rem 2rem 3.5rem; color: var(--white); }
+.eyebrow { font-size: 12px; font-weight: 400; letter-spacing: 0.22em; text-transform: uppercase; color: var(--white); margin-bottom: 0.9rem; }
 .villa-hero h1 { font-family: var(--font-display); font-weight: 300; font-size: clamp(2.6rem, 6vw, 4.4rem); line-height: 1.05; margin-bottom: 0.8rem; }
 .villa-hero h1 em { font-style: italic; color: var(--gold-light); }
 .villa-hero p.lead { font-size: 1.05rem; max-width: 560px; color: rgba(255,255,255,0.85); margin-bottom: 1.8rem; }
 .hero-actions { display: flex; gap: 1rem; flex-wrap: wrap; }
+.hero-actions .btn { text-shadow: none; }
 
 /* ── KEY FIGURES ── */
 .figures { background: var(--white); border-bottom: 1px solid var(--border); }
@@ -262,6 +265,7 @@ footer { background: var(--navy); color: rgba(255,255,255,0.65); padding: 3rem 2
   nav { padding: 0 1rem; }
   section.block, .booking { padding: 4rem 1.25rem; }
   .villa-hero { min-height: 70vh; }
+  .villa-hero::after { background: linear-gradient(180deg, rgba(26,39,68,0.15) 0%, rgba(26,39,68,0.55) 45%, rgba(26,39,68,0.85) 100%); }
   .villa-hero-content { padding: 2rem 1.25rem 2.5rem; }
   .figures-inner { padding: 1.5rem 1rem; }
   .highlights { grid-template-columns: 1fr; }
