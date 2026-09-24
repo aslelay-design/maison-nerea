@@ -3,42 +3,33 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Villa des Sables — Maison de vacances à Saint-Clément-des-Baleines, Île de Ré | Maison Néréa</title>
-<meta name="description" content="Villa des Sables, maison rétaise de charme rénovée en 2026 à Saint-Clément-des-Baleines : 170 m², 5 chambres, 3 salles d'eau, jardin clos, plage à pied. Jusqu'à 10 voyageurs." />
+<title>L'Escale Rétaise — Maison avec jardin clos et piscine à La Flotte, Île de Ré | Maison Néréa</title>
+<meta name="description" content="L'Escale Rétaise, maison rénovée en 2023 dans une résidence avec piscine chauffée à La Flotte, Île de Ré : 2 chambres, terrasse ensoleillée, jardin clos, plage à 100 m, port à 600 m. Jusqu'à 4 voyageurs." />
 <meta name="robots" content="index, follow" />
 <meta name="geo.region" content="FR-17" />
-<meta name="geo.placename" content="Saint-Clément-des-Baleines, Île de Ré" />
-<meta property="og:title" content="Villa des Sables — Plage à pied & jardin clos, Île de Ré" />
-<meta property="og:description" content="Maison rétaise de 170 m² pour 10 voyageurs à Saint-Clément-des-Baleines : 5 chambres, 3 bâtiments autour d'un jardin clos, plage à pied." />
+<meta name="geo.placename" content="La Flotte, Île de Ré" />
+<meta property="og:title" content="L'Escale Rétaise — Jardin clos, piscine & plage à 100 m, La Flotte" />
+<meta property="og:description" content="Maison de charme pour 4 voyageurs, rénovée en 2023, dans une résidence avec piscine à deux pas du port de La Flotte." />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://maison-nerea.fr/villa-des-sables.html" />
-<meta property="og:image" content="https://maison-nerea.fr/assets/villa-01.jpg" />
-<link rel="canonical" href="https://maison-nerea.fr/villa-des-sables.html" />
+<meta property="og:url" content="https://maison-nerea.fr/escale-retaise.html" />
+<meta property="og:image" content="https://maison-nerea.fr/assets/escale-01.jpg" />
+<link rel="canonical" href="https://maison-nerea.fr/escale-retaise.html" />
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "VacationRental",
-  "name": "Villa des Sables",
-  "description": "Maison rétaise de charme rénovée en 2026, 170 m², 5 chambres, 3 salles d'eau, jardin clos, à quelques minutes à pied de la plage.",
-  "url": "https://maison-nerea.fr/villa-des-sables.html",
-  "image": "https://maison-nerea.fr/assets/villa-01.jpg",
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Saint-Clément-des-Baleines",
-    "postalCode": "17590",
-    "addressRegion": "Charente-Maritime",
-    "addressCountry": "FR"
-  },
+  "name": "L'Escale Rétaise",
+  "description": "Maison rénovée en 2023 dans une résidence calme avec piscine chauffée, 2 chambres, terrasse et jardin clos, plage à 100 m et port de La Flotte à 600 m.",
+  "url": "https://maison-nerea.fr/escale-retaise.html",
+  "image": "https://maison-nerea.fr/assets/escale-01.jpg",
+  "address": { "@type": "PostalAddress", "addressLocality": "La Flotte", "postalCode": "17630", "addressRegion": "Charente-Maritime", "addressCountry": "FR" },
   "containsPlace": {
-    "@type": "Accommodation",
-    "additionalType": "House",
-    "occupancy": { "@type": "QuantitativeValue", "value": 10 },
-    "numberOfBedrooms": 5,
-    "numberOfBathroomsTotal": 3,
-    "floorSize": { "@type": "QuantitativeValue", "value": 170, "unitCode": "MTK" }
+    "@type": "Accommodation", "additionalType": "House",
+    "occupancy": { "@type": "QuantitativeValue", "value": 4 },
+    "numberOfBedrooms": 2, "numberOfBathroomsTotal": 1, "petsAllowed": true
   },
-  "aggregateRating": { "@type": "AggregateRating", "ratingValue": 4.95, "reviewCount": 75, "bestRating": 5 }
+  "aggregateRating": { "@type": "AggregateRating", "ratingValue": 4.87, "reviewCount": 196, "bestRating": 5 }
 }
 </script>
 
@@ -246,6 +237,7 @@ footer { background: var(--navy); color: rgba(255,255,255,0.65); padding: 3rem 2
 .reveal { opacity: 0; transform: translateY(20px); transition: opacity 0.7s ease, transform 0.7s ease; }
 .reveal.visible { opacity: 1; transform: translateY(0); }
 
+
 /* ── MENU « NOS MAISONS » ── */
 .nav-dropdown { position: relative; }
 .nav-dropdown > a::after { content: " ▾"; font-size: 9px; }
@@ -258,6 +250,12 @@ footer { background: var(--navy); color: rgba(255,255,255,0.65); padding: 3rem 2
 .nav-dropdown:hover .nav-dropdown-menu, .nav-dropdown:focus-within .nav-dropdown-menu { display: block; }
 .mobile-sub { padding-left: 1rem !important; font-size: 12px !important; color: var(--gold) !important; }
 .mobile-group { font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--text-muted); padding-top: 0.3rem; }
+.gallery .half { grid-column: span 2; }
+.rooms.rooms-3 { grid-template-columns: repeat(3, 1fr); }
+.rooms.rooms-2 { grid-template-columns: repeat(2, 1fr); max-width: 760px; }
+.equip-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2.5rem; margin-top: 2rem; }
+.equip-grid h3 { font-family: var(--font-display); font-weight: 500; font-size: 1.35rem; margin-bottom: 0.6rem; }
+@media (max-width: 900px) { .equip-grid { grid-template-columns: 1fr; gap: 1.5rem; } .rooms.rooms-3 { grid-template-columns: repeat(2, 1fr); } }
 
 /* ── RESPONSIVE ── */
 @media (max-width: 1120px) {
@@ -335,11 +333,11 @@ footer { background: var(--navy); color: rgba(255,255,255,0.65); padding: 3rem 2
 
 <!-- ── HERO ── -->
 <header class="villa-hero">
-  <img src="assets/villa-01.jpg" alt="Villa des Sables, maison rétaise avec jardin clos à Saint-Clément-des-Baleines" />
+  <img src="assets/escale-01.jpg" alt="Terrasse ensoleillée et jardin clos de L'Escale Rétaise à La Flotte" />
   <div class="villa-hero-content">
-    <div class="eyebrow">Saint-Clément-des-Baleines · Île de Ré</div>
-    <h1>Villa <em>des Sables</em></h1>
-    <p class="lead">Une maison rétaise de charme, rénovée en 2026, organisée autour d'un jardin clos, à quelques minutes à pied de la plage.</p>
+    <div class="eyebrow">La Flotte · Île de Ré</div>
+    <h1>L'Escale <em>Rétaise</em></h1>
+    <p class="lead">Une maison rénovée en 2023, nichée dans une résidence calme avec piscine : terrasse ensoleillée, jardin clos, et la plage à 100 m.</p>
     <div class="hero-actions">
       <a href="#reserver" class="btn btn-primary">Voir les disponibilités</a>
       <a href="#galerie" class="btn btn-outline">Découvrir la maison</a>
@@ -350,12 +348,12 @@ footer { background: var(--navy); color: rgba(255,255,255,0.65); padding: 3rem 2
 <!-- ── KEY FIGURES ── -->
 <div class="figures">
   <div class="figures-inner">
-    <div class="figure"><strong>10</strong><span>Voyageurs</span></div>
-    <div class="figure"><strong>5</strong><span>Chambres</span></div>
-    <div class="figure"><strong>7</strong><span>Lits</span></div>
-    <div class="figure"><strong>3</strong><span>Salles d'eau</span></div>
-    <div class="figure"><strong>170</strong><span>m²</span></div>
-    <div class="figure"><strong>4,95</strong><span>★ 75 avis</span></div>
+    <div class="figure"><strong>4</strong><span>Voyageurs</span></div>
+    <div class="figure"><strong>2</strong><span>Chambres</span></div>
+    <div class="figure"><strong>1</strong><span>Salle de bain</span></div>
+    <div class="figure"><strong>100 m</strong><span>De la plage</span></div>
+    <div class="figure"><strong>600 m</strong><span>Du port</span></div>
+    <div class="figure"><strong>4,87</strong><span>★ 196 avis</span></div>
   </div>
 </div>
 
@@ -364,14 +362,14 @@ footer { background: var(--navy); color: rgba(255,255,255,0.65); padding: 3rem 2
   <div class="container intro-grid">
     <div class="intro-text reveal">
       <div class="section-label">La maison</div>
-      <h2 class="section-title">Le charme rétais,<br /><em>le confort d'aujourd'hui</em></h2>
+      <h2 class="section-title">Une bulle de douceur,<br /><em>à deux pas de la mer</em></h2>
       <div class="gold-rule"></div>
-      <p>Entièrement rénovée en 2026, la Villa des Sables conjugue l'authenticité d'une maison de l'île et le confort d'un intérieur contemporain. Pierres, poutres apparentes et décoration soignée y créent une atmosphère chaleureuse.</p>
-      <p>La maison se compose de <strong>trois bâtiments indépendants</strong> organisés autour d'un jardin clos de murs. Chacun dispose d'au moins une chambre et de sa propre salle d'eau : on partage pleinement les vacances tout en préservant l'intimité de chacun.</p>
-      <p>Salon, cuisine entièrement équipée avec espace repas et jardin privatif : la maison accueille confortablement jusqu'à 10 personnes, en famille ou entre amis. L'ensemble de la propriété est réservé à votre séjour, sans aucun espace partagé.</p>
+      <p>Rénovée en 2023, L'Escale Rétaise est nichée dans une résidence privée et calme avec piscine chauffée, à quelques pas du port de La Flotte. Une décoration attachante, une terrasse ensoleillée et un jardin clos en font un cocon idéal pour quatre.</p>
+      <p>La pièce de vie s'ouvre sur l'extérieur. La maison compte <strong>deux chambres</strong>, dont une modulable en lit double, et une salle de bain.</p>
+      <p>Plage à 100 m, port et marché à 600 m : ici, tout se fait à pied ou à vélo. Place de parking souterrain privée, arrivée autonome, et vos compagnons à quatre pattes sont les bienvenus.</p>
     </div>
     <div class="intro-img reveal">
-      <img src="assets/villa-02.jpg" alt="Intérieur de la Villa des Sables, pierres et poutres apparentes" loading="lazy" />
+      <img src="assets/escale-02.jpg" alt="Pièce de vie lumineuse de L'Escale Rétaise" loading="lazy" />
     </div>
   </div>
 </section>
@@ -383,24 +381,24 @@ footer { background: var(--navy); color: rgba(255,255,255,0.65); padding: 3rem 2
     <h2 class="section-title">Ce qui fait <em>la différence</em></h2>
     <div class="highlights">
       <div class="highlight reveal">
-        <div class="highlight-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M2 18c2 0 2-1.5 4-1.5S8 18 10 18s2-1.5 4-1.5 2 1.5 4 1.5 2-1.5 4-1.5"/><circle cx="17" cy="7" r="3"/></svg></div>
-        <h3>Plage à pied</h3>
-        <p>La plage et le cœur du village sont à quelques minutes à pied.</p>
-      </div>
-      <div class="highlight reveal">
         <div class="highlight-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 22V11M12 11c-4 0-6-3-6-6 3 0 6 2 6 6zm0 0c4 0 6-3 6-6-3 0-6 2-6 6z"/><path d="M4 22h16"/></svg></div>
-        <h3>Jardin clos</h3>
-        <p>Un jardin privatif ceint de murs, calme et à l'abri des regards.</p>
+        <h3>Terrasse & jardin clos</h3>
+        <p>Store électrique, éclairage intégré et plancha pour les soirées dehors.</p>
       </div>
       <div class="highlight reveal">
-        <div class="highlight-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="2" y="10" width="6" height="10"/><rect x="9" y="6" width="6" height="14"/><rect x="16" y="10" width="6" height="10"/></svg></div>
-        <h3>3 bâtiments</h3>
-        <p>Chaque espace a sa chambre et sa salle d'eau : idéal pour plusieurs familles.</p>
+        <div class="highlight-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M2 16c2 0 2-1.5 4-1.5S8 16 10 16s2-1.5 4-1.5 2 1.5 4 1.5 2-1.5 4-1.5M2 20c2 0 2-1.5 4-1.5S8 20 10 20s2-1.5 4-1.5 2 1.5 4 1.5 2-1.5 4-1.5"/><path d="M8 13V5a2 2 0 0 1 4 0M14 13V5a2 2 0 0 1 4 0M8 8h6"/></svg></div>
+        <h3>Piscine chauffée</h3>
+        <p>Dans la résidence, ouverte selon les périodes de l'année.</p>
       </div>
       <div class="highlight reveal">
-        <div class="highlight-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="5.5" cy="16.5" r="3.5"/><circle cx="18.5" cy="16.5" r="3.5"/><path d="M5.5 16.5 9 9h6l3.5 7.5M9 9 12 16.5h-6.5M13 6h3"/></svg></div>
-        <h3>Pistes cyclables</h3>
-        <p>À 50 m de la maison, pour partir découvrir l'île à vélo.</p>
+        <div class="highlight-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M2 18c2 0 2-1.5 4-1.5S8 18 10 18s2-1.5 4-1.5 2 1.5 4 1.5 2-1.5 4-1.5"/><circle cx="17" cy="7" r="3"/></svg></div>
+        <h3>Plage à 100 m</h3>
+        <p>Port et marché de La Flotte à 600 m, à pied ou à vélo.</p>
+      </div>
+      <div class="highlight reveal">
+        <div class="highlight-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M9 16V8h3.5a2.5 2.5 0 0 1 0 5H9"/></svg></div>
+        <h3>Parking privé</h3>
+        <p>Une place en parking souterrain, dans une résidence sécurisée.</p>
       </div>
     </div>
   </div>
@@ -412,14 +410,11 @@ footer { background: var(--navy); color: rgba(255,255,255,0.65); padding: 3rem 2
     <div class="section-label">Galerie</div>
     <h2 class="section-title">En <em>images</em></h2>
     <div class="gallery">
-      <button class="wide" data-i="0"><img src="assets/villa-01.jpg" alt="Villa des Sables — vue d'ensemble" loading="lazy" /></button>
-      <button data-i="1"><img src="assets/villa-02.jpg" alt="Espace de vie" loading="lazy" /></button>
-      <button data-i="2"><img src="assets/villa-03.jpg" alt="La maison" loading="lazy" /></button>
-      <button data-i="3"><img src="assets/villa-05.jpg" alt="Chambre 1" loading="lazy" /></button>
-      <button data-i="4"><img src="assets/villa-04.jpg" alt="Chambre 2" loading="lazy" /></button>
-      <button data-i="5"><img src="assets/villa-06.jpg" alt="Chambre 3" loading="lazy" /></button>
-      <button data-i="6"><img src="assets/villa-07.jpg" alt="Chambre 4" loading="lazy" /></button>
-      <button data-i="7"><img src="assets/villa-08.jpg" alt="Chambre 5" loading="lazy" /></button>
+      <button class="wide" data-i="0"><img src="assets/escale-01.jpg" alt="Terrasse et jardin clos" loading="lazy" /></button>
+      <button data-i="1"><img src="assets/escale-02.jpg" alt="Salon" loading="lazy" /></button>
+      <button data-i="2"><img src="assets/escale-03.jpg" alt="Coin repas" loading="lazy" /></button>
+      <button data-i="3"><img src="assets/escale-04.jpg" alt="Cuisine" loading="lazy" /></button>
+      <button data-i="4"><img src="assets/escale-05.jpg" alt="Chambre 1" loading="lazy" /></button>
     </div>
   </div>
 </section>
@@ -428,46 +423,81 @@ footer { background: var(--navy); color: rgba(255,255,255,0.65); padding: 3rem 2
 <section class="block alt">
   <div class="container">
     <div class="section-label">Couchages</div>
-    <h2 class="section-title">Cinq chambres, <em>sept lits</em></h2>
-    <div class="rooms">
-      <div class="room reveal"><img src="assets/villa-05.jpg" alt="Chambre 1" loading="lazy" /><div class="room-body"><h3>Chambre 1</h3><p>1 lit queen size</p></div></div>
-      <div class="room reveal"><img src="assets/villa-04.jpg" alt="Chambre 2" loading="lazy" /><div class="room-body"><h3>Chambre 2</h3><p>1 lit queen size</p></div></div>
-      <div class="room reveal"><img src="assets/villa-06.jpg" alt="Chambre 3" loading="lazy" /><div class="room-body"><h3>Chambre 3</h3><p>2 lits simples</p></div></div>
-      <div class="room reveal"><img src="assets/villa-07.jpg" alt="Chambre 4" loading="lazy" /><div class="room-body"><h3>Chambre 4</h3><p>2 lits simples</p></div></div>
-      <div class="room reveal"><img src="assets/villa-08.jpg" alt="Chambre 5" loading="lazy" /><div class="room-body"><h3>Chambre 5</h3><p>1 lit queen size</p></div></div>
+    <h2 class="section-title">Deux chambres, <em>quatre couchages</em></h2>
+    <div class="rooms rooms-2">
+      <div class="room reveal"><img src="assets/escale-05.jpg" alt="Chambre 1" loading="lazy" /><div class="room-body"><h3>Chambre 1</h3><p>Chambre parentale · lit 160 · grand placard · lit parapluie possible</p></div></div>
+      <div class="room reveal"><img src="assets/escale-06.jpg" alt="Chambre 2" loading="lazy" /><div class="room-body"><h3>Chambre 2</h3><p>2 lits simples de 90, ou un grand lit 180 × 190</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ── EQUIPEMENTS ── -->
+<section class="block">
+  <div class="container">
+    <div class="section-label">Équipements</div>
+    <h2 class="section-title">Tout pour <em>un séjour facile</em></h2>
+    <div class="equip-grid">
+      <div class="reveal">
+        <h3>Cuisine</h3>
+        <ul class="list">
+          <li>Plaque induction 2 feux, lave-vaisselle</li>
+          <li>Grand réfrigérateur-congélateur</li>
+          <li>Plancha électrique (en extérieur)</li>
+          <li>Nespresso, cafetière filtre, bouilloire, grille-pain</li>
+          <li>Ustensiles fruits de mer, produits de base fournis</li>
+        </ul>
+      </div>
+      <div class="reveal">
+        <h3>Famille</h3>
+        <ul class="list">
+          <li>Lit parapluie avec matelas</li>
+          <li>Chaise haute</li>
+          <li>Barrière d'escalier</li>
+        </ul>
+      </div>
+      <div class="reveal">
+        <h3>Pratique</h3>
+        <ul class="list">
+          <li>Wifi fibre</li>
+          <li>TV connectée écran plat</li>
+          <li>Rangement vélos dans le jardin</li>
+          <li>Arrivée autonome par boîte à clés</li>
+          <li>Animaux bienvenus</li>
+        </ul>
+      </div>
     </div>
   </div>
 </section>
 
 <!-- ── PRACTICAL ── -->
-<section class="block">
+<section class="block alt">
   <div class="container">
     <div class="practical-grid">
       <div class="reveal">
-        <div class="section-label">Le quartier</div>
-        <h2 class="section-title">Saint-Clément-<br /><em>des-Baleines</em></h2>
+        <div class="section-label">Le village</div>
+        <h2 class="section-title">La <em>Flotte</em></h2>
         <div class="gold-rule"></div>
-        <p style="margin-bottom:1rem">Un quartier calme à la pointe nord de l'île, à quelques minutes à pied de la plage et du village. Boulangerie, presse, commerces et location de vélos sont facilement accessibles, et le phare des Baleines n'est jamais loin.</p>
-        <p>Stationnement gratuit dans la rue, à proximité de la maison.</p>
+        <p style="margin-bottom:1rem">Avec son port, son marché médiéval et ses ruelles, La Flotte est l'un des plus beaux villages de l'île. Un emplacement privilégié pour découvrir l'Île de Ré à pied, à vélo ou en voiture, en toute saison, avec les commerces à proximité.</p>
+        <p>Conseil d'accès : le port est souvent piétonnier en saison. Contournez par la direction Saint-Martin pour entrer dans le village par le côté le plus accessible.</p>
       </div>
       <div class="reveal">
         <div class="section-label">Bon à savoir</div>
         <ul class="list">
-          <li>Maison entièrement privative : trois bâtiments et jardin</li>
-          <li>Ménage de fin de séjour obligatoire : 260 €</li>
-          <li>Linge de lit et de toilette disponible en option</li>
-          <li>Maison non-fumeur, animaux non admis</li>
-          <li>Fêtes et événements non autorisés, par respect du voisinage</li>
-          <li>Pas de parking privé, stationnement gratuit à proximité</li>
-          <li>N° d'enregistrement meublé de tourisme : 17318000266w8</li>
+          <li>Arrivée à partir de 16h, départ avant 10h</li>
+          <li>Forfait ménage : 70 €, réglé à l'arrivée</li>
+          <li>Animal : supplément de 30 €, à préciser à la réservation</li>
+          <li>Linge de lit en option : 15 € par set et par séjour (lits non faits à l'arrivée)</li>
+          <li>Linge de toilette en option : 15 € par personne et par séjour</li>
+          <li>Piscine chauffée de la résidence, ouverte selon les périodes</li>
+          <li>N° d'enregistrement meublé de tourisme : 17161000540EE</li>
         </ul>
       </div>
     </div>
     <div class="rating reveal">
-      <strong>4,95</strong>
+      <strong>4,87</strong>
       <div>
         <div class="stars">★★★★★</div>
-        <small>Note moyenne sur 75 avis voyageurs (Airbnb) · 5,0 en communication, arrivée et emplacement</small>
+        <small>Note moyenne sur 196 avis voyageurs (Airbnb)</small>
       </div>
     </div>
   </div>
@@ -477,12 +507,12 @@ footer { background: var(--navy); color: rgba(255,255,255,0.65); padding: 3rem 2
 <section class="booking" id="reserver">
   <div class="container">
     <div class="section-label" style="color:var(--gold-light)">Réservation</div>
-    <h2 class="section-title">Séjourner à la <em style="color:var(--gold-light)">Villa des Sables</em></h2>
+    <h2 class="section-title">Séjourner à <em style="color:var(--gold-light)">L'Escale Rétaise</em></h2>
     <p>Consultez les disponibilités et réservez en ligne. Pour toute question sur la maison ou votre séjour, notre équipe vous répond volontiers.</p>
 
-    <!-- ▼ ÉTAPE 2 (après obtention de la carte G) : remplacer le bouton Airbnb ci-dessous par le moteur de réservation Beds24 (propriété 352266) -->
+    <!-- ▼ ÉTAPE 2 (après obtention de la carte G) : remplacer le bouton Airbnb ci-dessous par le moteur de réservation Beds24 (propriété 337003) -->
     <div class="hero-actions">
-      <a href="https://www.airbnb.fr/rooms/33193636" class="btn btn-primary" target="_blank" rel="noopener">Réserver sur Airbnb</a>
+      <a href="https://www.airbnb.fr/rooms/38309584" class="btn btn-primary" target="_blank" rel="noopener">Réserver sur Airbnb</a>
       <a href="index.html#contact" class="btn btn-outline">Poser une question</a>
     </div>
     <!-- ▲ fin du bloc réservation -->
