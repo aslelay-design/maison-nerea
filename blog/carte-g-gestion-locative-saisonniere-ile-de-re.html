@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Gestion locative saisonnière : pourquoi la carte G change tout pour vous — Maison Néréa</title>
+<meta name="description" content="Carte G, loi Hoguet, garantie financière : ce qu'une conciergerie a le droit de faire ou non, les risques pour le propriétaire, et comment vérifier son prestataire à l'Île de Ré." />
+<meta name="robots" content="index, follow" />
+<link rel="canonical" href="https://maison-nerea.fr/blog/carte-g-gestion-locative-saisonniere-ile-de-re.html" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Gestion locative saisonnière : pourquoi la carte G change tout pour vous",
+  "description": "Carte G, loi Hoguet, garantie financière : ce qu'une conciergerie a le droit de faire ou non, les risques pour le propriétaire, et comment vérifier son prestataire à l'Île de Ré.",
+  "author": { "@type": "Person", "name": "Anne-Sophie Le Lay" },
+  "publisher": { "@type": "Organization", "name": "Maison Néréa", "url": "https://maison-nerea.fr" },
+  "datePublished": "2026-11-15",
+  "dateModified": "2026-11-15",
+  "url": "https://maison-nerea.fr/blog/carte-g-gestion-locative-saisonniere-ile-de-re.html"
+}
+</script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18216152237"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'AW-18216152237');
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --navy: #1a2744;
+  --navy-light: #243259;
+  --gold: #b49a6a;
+  --gold-light: #d4b88a;
+  --gold-pale: #f5ede0;
+  --cream: #faf8f4;
+  --white: #ffffff;
+  --text: #1a2744;
+  --text-muted: #6b7280;
+  --border: #e8dfd0;
+  --section-alt: #f7f3ed;
+  --font-display: 'Cormorant Garamond', Georgia, serif;
+  --font-body: 'Jost', sans-serif;
+  --radius: 4px;
+  --radius-lg: 8px;
+  --shadow: 0 2px 20px rgba(26,39,68,0.08);
+  --shadow-lg: 0 8px 40px rgba(26,39,68,0.12);
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--font-body);
+  font-weight: 300;
+  color: var(--text);
+  background: var(--cream);
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ── NAV ── */
+nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+  background: rgba(250,248,244,0.95);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+  padding: 0 2rem;
+  transition: box-shadow 0.3s;
+}
+nav.scrolled { box-shadow: var(--shadow); }
+.nav-inner {
+  max-width: 1100px; margin: 0 auto;
+  display: flex; align-items: center; justify-content: space-between;
+  height: 68px;
+}
+.nav-logo {
+  display: flex; align-items: center; gap: 12px;
+  text-decoration: none; color: var(--navy);
+}
+.nav-logo-mark {
+  width: 38px; height: 38px; border: 1.5px solid var(--gold);
+  border-radius: 50%; display: flex; align-items: center; justify-content: center;
+  font-family: var(--font-display); font-size: 13px; font-weight: 500;
+  color: var(--gold); letter-spacing: 0.05em; flex-shrink: 0;
+}
+.nav-logo-text { line-height: 1.15; }
+.nav-logo-text strong {
+  display: block; font-family: var(--font-display); font-size: 15px;
+  font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: var(--navy);
+}
+.nav-logo-text span {
+  font-size: 10px; font-weight: 300; letter-spacing: 0.15em;
+  text-transform: uppercase; color: var(--gold);
+}
+.nav-links {
+  display: flex; gap: 2rem; list-style: none; align-items: center;
+}
+.nav-links a {
+  text-decoration: none; font-size: 12px; font-weight: 400;
+  letter-spacing: 0.12em; text-transform: uppercase; color: var(--text);
+  transition: color 0.2s; padding-bottom: 2px;
+  border-bottom: 1px solid transparent;
+}
+.nav-links a:hover { color: var(--gold); border-bottom-color: var(--gold); }
+.nav-links a.active { color: var(--gold); border-bottom-color: var(--gold); }
+.nav-cta {
+  background: var(--navy); color: var(--white) !important;
+  padding: 8px 18px; border-radius: var(--radius);
+  border-bottom: none !important;
+}
+.nav-cta:hover { background: var(--navy-light) !important; }
+.nav-burger { display: none; background: none; border: none; cursor: pointer; padding: 4px; }
+.nav-burger span { display: block; width: 22px; height: 1.5px; background: var(--navy); margin: 5px 0; }
+.mobile-menu {
+  display: none; position: fixed; top: 68px; left: 0; right: 0; z-index: 99;
+  background: var(--cream); border-bottom: 1px solid var(--border);
+  padding: 1.5rem 2rem; flex-direction: column; gap: 1rem;
+}
+.mobile-menu.open { display: flex; }
+.mobile-menu a {
+  text-decoration: none; font-size: 13px; font-weight: 400;
+  letter-spacing: 0.12em; text-transform: uppercase; color: var(--text);
+  padding: 0.5rem 0; border-bottom: 1px solid var(--border);
+}
+.mobile-menu a:last-child { border-bottom: none; }
+
+/* ── HERO ARTICLE ── */
+.article-hero {
+  margin-top: 68px;
+  background: var(--navy);
+  padding: 72px 2rem 64px;
+}
+.article-hero-inner {
+  max-width: 760px; margin: 0 auto;
+}
+.article-breadcrumb {
+  display: flex; align-items: center; gap: 8px; margin-bottom: 24px;
+  font-size: 11px; font-weight: 400; letter-spacing: 0.1em; text-transform: uppercase;
+}
+.article-breadcrumb a { color: rgba(255,255,255,0.5); text-decoration: none; transition: color 0.2s; }
+.article-breadcrumb a:hover { color: var(--gold-light); }
+.article-breadcrumb span { color: rgba(255,255,255,0.25); }
+.article-breadcrumb strong { color: rgba(255,255,255,0.7); font-weight: 400; }
+.article-tag {
+  display: inline-block; font-size: 10px; font-weight: 400; letter-spacing: 0.18em;
+  text-transform: uppercase; color: var(--gold-light);
+  border: 1px solid rgba(212,184,138,0.4); padding: 4px 12px; border-radius: 2px;
+  margin-bottom: 20px;
+}
+.article-hero h1 {
+  font-family: var(--font-display); font-size: clamp(2rem, 5vw, 3.2rem);
+  font-weight: 300; line-height: 1.15; color: var(--white); margin-bottom: 20px;
+}
+.article-hero h1 em { font-style: italic; color: var(--gold-light); }
+.article-meta {
+  display: flex; align-items: center; gap: 20px; flex-wrap: wrap;
+  font-size: 12px; color: rgba(255,255,255,0.5); font-weight: 300; letter-spacing: 0.05em;
+}
+.article-meta-divider { width: 1px; height: 12px; background: rgba(255,255,255,0.2); }
+
+/* ── CORPS DE L'ARTICLE ── */
+.article-body {
+  max-width: 760px; margin: 0 auto; padding: 64px 2rem 80px;
+}
+
+.article-intro {
+  font-family: var(--font-display); font-size: 1.25rem; font-weight: 300;
+  line-height: 1.7; color: var(--navy); margin-bottom: 48px;
+  padding-bottom: 48px; border-bottom: 1px solid var(--border);
+  font-style: italic;
+}
+
+.article-body h2 {
+  font-family: var(--font-display); font-size: 1.75rem; font-weight: 400;
+  color: var(--navy); margin: 48px 0 16px; line-height: 1.25;
+}
+.article-body h2::before {
+  content: ''; display: block; width: 32px; height: 1px;
+  background: var(--gold); margin-bottom: 14px;
+}
+
+.article-body h3 {
+  font-family: var(--font-body); font-size: 0.95rem; font-weight: 500;
+  letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold);
+  margin: 32px 0 10px;
+}
+
+.article-body p {
+  font-size: 15px; font-weight: 300; line-height: 1.85;
+  color: #3a4560; margin-bottom: 20px;
+}
+
+.article-body ul, .article-body ol {
+  margin: 16px 0 24px 0; padding-left: 0; list-style: none;
+}
+.article-body ul li, .article-body ol li {
+  font-size: 15px; font-weight: 300; line-height: 1.75; color: #3a4560;
+  padding: 8px 0 8px 24px; border-bottom: 1px solid var(--border);
+  position: relative;
+}
+.article-body ul li:last-child, .article-body ol li:last-child { border-bottom: none; }
+.article-body ul li::before {
+  content: ''; position: absolute; left: 0; top: 18px;
+  width: 5px; height: 5px; background: var(--gold); border-radius: 50%;
+}
+.article-body ol { counter-reset: ol-counter; }
+.article-body ol li { counter-increment: ol-counter; }
+.article-body ol li::before {
+  content: counter(ol-counter);
+  position: absolute; left: 0; top: 8px;
+  font-family: var(--font-display); font-size: 1rem; color: var(--gold); font-weight: 400;
+}
+
+/* Encadré */
+.article-callout {
+  background: var(--gold-pale); border-left: 3px solid var(--gold);
+  border-radius: 0 var(--radius) var(--radius) 0;
+  padding: 20px 24px; margin: 32px 0;
+}
+.article-callout p { margin-bottom: 0; color: var(--navy); }
+.article-callout strong { font-weight: 500; }
+
+/* Encadré synthèse */
+.article-summary {
+  background: var(--navy); border-radius: var(--radius-lg);
+  padding: 32px 36px; margin: 48px 0;
+}
+.article-summary h4 {
+  font-family: var(--font-display); font-size: 1.1rem; font-weight: 400;
+  color: var(--gold-light); margin-bottom: 16px; letter-spacing: 0.05em;
+}
+.article-summary ul { margin: 0; }
+.article-summary ul li {
+  font-size: 13px; color: rgba(255,255,255,0.75); border-bottom-color: rgba(255,255,255,0.1);
+  font-weight: 300;
+}
+.article-summary ul li::before { background: var(--gold-light); }
+
+/* Séparateur de section */
+.article-divider {
+  width: 48px; height: 1px; background: var(--border); margin: 48px 0;
+}
+
+/* ── CTA INLINE ── */
+.article-cta {
+  background: var(--section-alt); border: 1px solid var(--border);
+  border-radius: var(--radius-lg); padding: 32px 36px;
+  margin: 48px 0; display: flex; align-items: center;
+  justify-content: space-between; gap: 24px; flex-wrap: wrap;
+}
+.article-cta p {
+  font-size: 14px; color: var(--text-muted); margin-bottom: 6px;
+  font-weight: 300;
+}
+.article-cta strong {
+  display: block; font-family: var(--font-display); font-size: 1.3rem;
+  font-weight: 400; color: var(--navy); margin-bottom: 4px;
+}
+.btn {
+  display: inline-block; text-decoration: none; font-size: 11px;
+  font-weight: 400; letter-spacing: 0.18em; text-transform: uppercase;
+  padding: 14px 28px; border-radius: var(--radius); transition: all 0.25s;
+  border: 1px solid transparent; white-space: nowrap;
+}
+.btn-primary { background: var(--gold); color: var(--navy); border-color: var(--gold); }
+.btn-primary:hover { background: var(--gold-light); }
+.btn-navy { background: var(--navy); color: var(--white); border-color: var(--navy); }
+.btn-navy:hover { background: var(--navy-light); }
+
+/* ── AUTEURE ── */
+.article-author {
+  display: flex; align-items: center; gap: 20px;
+  padding: 32px 0; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);
+  margin: 48px 0;
+}
+.article-author-avatar {
+  width: 56px; height: 56px; border-radius: 50%; overflow: hidden; flex-shrink: 0;
+  border: 1.5px solid var(--gold);
+}
+.article-author-avatar img { width: 100%; height: 100%; object-fit: cover; }
+.article-author-name {
+  font-family: var(--font-display); font-size: 1rem; font-weight: 400;
+  color: var(--navy); margin-bottom: 2px;
+}
+.article-author-role { font-size: 11px; color: var(--gold); letter-spacing: 0.12em; text-transform: uppercase; }
+
+/* ── ARTICLES SUIVANTS ── */
+.article-next {
+  padding: 48px 2rem 80px; background: var(--section-alt);
+}
+.article-next-inner { max-width: 760px; margin: 0 auto; }
+.article-next-label {
+  font-size: 10px; font-weight: 400; letter-spacing: 0.3em; text-transform: uppercase;
+  color: var(--gold); margin-bottom: 24px; display: block;
+}
+.article-next-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+.article-next-card {
+  background: var(--white); border: 1px solid var(--border);
+  border-radius: var(--radius-lg); overflow: hidden;
+  display: flex; flex-direction: column;
+  transition: box-shadow 0.25s, transform 0.25s;
+  text-decoration: none;
+}
+.article-next-card:hover { box-shadow: var(--shadow-lg); transform: translateY(-2px); }
+.article-next-card-img {
+  height: 140px; background-size: cover; background-position: center;
+  background-color: var(--border);
+}
+.article-next-card-body { padding: 18px 20px 22px; }
+.article-next-tag {
+  font-size: 10px; font-weight: 400; letter-spacing: 0.15em; text-transform: uppercase;
+  color: var(--gold); margin-bottom: 8px; display: block;
+}
+.article-next-title {
+  font-family: var(--font-display); font-size: 1.05rem; font-weight: 400;
+  line-height: 1.3; color: var(--navy);
+}
+
+/* ── FOOTER ── */
+footer {
+  background: var(--navy); color: rgba(255,255,255,0.65); padding: 3rem 2rem;
+}
+.footer-inner {
+  max-width: 1100px; margin: 0 auto;
+  display: flex; align-items: center; justify-content: space-between;
+  flex-wrap: wrap; gap: 1.5rem;
+}
+.footer-brand { display: flex; align-items: center; gap: 12px; }
+.footer-logo-mark {
+  width: 34px; height: 34px; border: 1px solid rgba(180,154,106,0.4);
+  border-radius: 50%; display: flex; align-items: center; justify-content: center;
+  font-family: var(--font-display); font-size: 11px; color: var(--gold-light);
+}
+.footer-name {
+  font-family: var(--font-display); font-size: 13px; font-weight: 400;
+  color: rgba(255,255,255,0.85); letter-spacing: 0.1em; text-transform: uppercase;
+}
+.footer-sub { font-size: 10px; letter-spacing: 0.12em; color: rgba(255,255,255,0.4); }
+.footer-links { display: flex; gap: 1.5rem; flex-wrap: wrap; }
+.footer-links a {
+  font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase;
+  color: rgba(255,255,255,0.5); text-decoration: none; transition: color 0.2s;
+}
+.footer-links a:hover { color: var(--gold-light); }
+.footer-copy { font-size: 11px; color: rgba(255,255,255,0.35); }
+
+/* ── RESPONSIVE ── */
+@media (max-width: 768px) {
+  .nav-links { display: none; }
+  .nav-burger { display: block; }
+  .article-hero { padding: 56px 1.25rem 48px; }
+  .article-body { padding: 48px 1.25rem 64px; }
+  .article-cta { flex-direction: column; align-items: flex-start; }
+  .article-next-grid { grid-template-columns: 1fr; }
+  .article-next { padding: 40px 1.25rem 64px; }
+}
+</style>
+</head>
+<body>
+
+<!-- ── NAV ── -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-logo">
+      <div class="nav-logo-mark">MN</div>
+      <div class="nav-logo-text">
+        <strong>Maison Néréa</strong>
+        <span>Conciergerie & Intendance</span>
+      </div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="../index.html#concept">Concept</a></li>
+      <li><a href="../index.html#prestations">Prestations</a></li>
+      <li><a href="../index.html#about">À propos</a></li>
+      <li><a href="../blog.html" class="active">Guides</a></li>
+      <li><a href="../index.html#contact" class="nav-cta">Premier échange</a></li>
+    </ul>
+    <button class="nav-burger" id="burger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="../index.html#concept">Concept</a>
+  <a href="../index.html#prestations">Prestations</a>
+  <a href="../index.html#about">À propos</a>
+  <a href="../blog.html">Guides</a>
+  <a href="../index.html#contact">Premier échange →</a>
+</div>
+
+<!-- ── HERO ── -->
+<header class="article-hero">
+  <div class="article-hero-inner">
+    <nav class="article-breadcrumb" aria-label="Fil d'Ariane">
+      <a href="../index.html">Accueil</a>
+      <span>›</span>
+      <a href="../blog.html">Guides</a>
+      <span>›</span>
+      <strong>Carte G et gestion locative</strong>
+    </nav>
+    <span class="article-tag">Propriétaires · Réglementation</span>
+    <h1>Gestion locative saisonnière :<br />pourquoi la carte G<br /><em>change tout pour vous</em></h1>
+    <div class="article-meta">
+      <span>Par Anne-Sophie Le Lay</span>
+      <span class="article-meta-divider"></span>
+      <span>Publié en novembre 2026</span>
+      <span class="article-meta-divider"></span>
+      <span>6 min de lecture</span>
+    </div>
+  </div>
+</header>
+
+<!-- ── CORPS ── -->
+<article class="article-body">
+
+  <p class="article-intro">« Conciergerie », « co-hôte », « gestionnaire Airbnb » : sur l'Île de Ré, les offres se ressemblent toutes sur le papier. Pourtant, derrière ces appellations, les garanties offertes au propriétaire ne sont pas du tout les mêmes. Le critère qui fait la différence tient en une lettre : G. Voici ce que recouvre la carte professionnelle de gestion immobilière, ce qu'elle change concrètement pour votre bien, et comment vérifier que votre interlocuteur en dispose.</p>
+
+  <h2>La carte G, qu'est-ce que c'est ?</h2>
+
+  <p>La carte G — pour « gestion immobilière » — est une carte professionnelle délivrée par la Chambre de commerce et d'industrie (CCI). Elle découle de la loi Hoguet du 2 janvier 1970, qui encadre toutes les personnes intervenant de manière habituelle sur les biens d'autrui. Elle est obligatoire pour gérer un bien mis en location pour le compte de son propriétaire, que la location soit à l'année ou saisonnière.</p>
+
+  <p>Pour l'obtenir, et la conserver, le professionnel doit remplir plusieurs conditions :</p>
+
+  <ul>
+    <li>Justifier d'une aptitude professionnelle (diplôme ou expérience en gestion immobilière)</li>
+    <li>Disposer d'une garantie financière, qui protège les fonds encaissés pour le compte des propriétaires</li>
+    <li>Être couvert par une assurance responsabilité civile professionnelle</li>
+    <li>Travailler sous mandat écrit, signé avec chaque propriétaire</li>
+    <li>Tenir une comptabilité séparée des fonds de ses mandants</li>
+    <li>Suivre une formation continue obligatoire, la carte étant renouvelée tous les trois ans</li>
+  </ul>
+
+  <div class="article-callout">
+    <p><strong>En clair :</strong> la carte G n'est pas un simple label. C'est un cadre légal contrôlé, qui engage le professionnel vis-à-vis de vous — et qui vous protège s'il venait à faillir.</p>
+  </div>
+
+  <h2>Ce qu'une conciergerie sans carte G n'a pas le droit de faire</h2>
+
+  <p>Une conciergerie sans carte professionnelle peut parfaitement exercer : accueil des voyageurs, remise des clés, ménage, linge, petite maintenance. Ce sont des prestations de services, et elles ne relèvent pas de la loi Hoguet.</p>
+
+  <p>En revanche, dès qu'il s'agit d'administrer la location elle-même, la carte G devient obligatoire. C'est le cas pour :</p>
+
+  <ul>
+    <li>Rédiger et gérer votre annonce sur Airbnb, Booking ou Abritel</li>
+    <li>Fixer et ajuster les tarifs de location</li>
+    <li>Accepter ou refuser les réservations</li>
+    <li>Encaisser les loyers, même temporairement avant de vous les reverser</li>
+    <li>Percevoir un dépôt de garantie</li>
+    <li>Signer les contrats de location en votre nom</li>
+  </ul>
+
+  <p>Un point est souvent mal compris : <strong>ne pas toucher l'argent ne suffit pas</strong> à se placer en dehors de la loi. La fiche pratique de la CCI Paris Île-de-France, mise à jour en septembre 2026, et un rapport publié par la FNAIM en avril 2026 vont dans le même sens : gérer l'annonce, les prix ou les réservations pour le compte d'un propriétaire relève déjà de la gestion immobilière.</p>
+
+  <h2>Les risques pour le propriétaire</h2>
+
+  <p>On pense souvent que la question de la carte ne concerne que le professionnel. En réalité, le propriétaire est aussi exposé.</p>
+
+  <h3>Vos fonds ne sont pas protégés</h3>
+
+  <p>Sans garantie financière, si la conciergerie qui encaisse vos loyers fait faillite ou disparaît, rien ne garantit que vous récupériez les sommes dues. Avec un professionnel titulaire de la carte G, la garantie financière couvre précisément ce risque.</p>
+
+  <h3>Votre contrat peut être fragilisé</h3>
+
+  <p>Un contrat conclu avec un professionnel qui exerce une activité réglementée sans la carte requise peut être remis en cause devant un juge. Le tribunal judiciaire de Tours a ainsi condamné une conciergerie exerçant sans carte en janvier 2025. Pour le propriétaire, c'est une source d'incertitude et de litiges dont il se passerait bien.</p>
+
+  <h3>Des sanctions lourdes pour le professionnel</h3>
+
+  <p>L'exercice sans carte est puni de six mois d'emprisonnement et 7 500 € d'amende ; la détention de fonds sans carte, de deux ans d'emprisonnement et 30 000 € d'amende. Un prestataire qui prend ce risque n'est pas forcément de mauvaise foi — mais il n'est pas non plus le partenaire le plus solide pour une relation de long terme.</p>
+
+  <div class="article-summary">
+    <h4>En résumé : ce que la carte G vous garantit</h4>
+    <ul>
+      <li>Un professionnel formé et contrôlé par la CCI</li>
+      <li>Une garantie financière sur les loyers encaissés pour vous</li>
+      <li>Une assurance responsabilité civile professionnelle</li>
+      <li>Un mandat écrit qui fixe clairement les missions et les honoraires</li>
+      <li>Des comptes séparés et un reporting transparent</li>
+      <li>Une gestion complète possible : annonce, tarifs, réservations, encaissements</li>
+    </ul>
+  </div>
+
+  <h2>Comment vérifier qu'une conciergerie est titulaire de la carte G</h2>
+
+  <p>La vérification prend deux minutes, et elle vaut la peine d'être faite avant toute signature :</p>
+
+  <ol>
+    <li>Cherchez le numéro de carte professionnelle (il commence par « CPI ») sur le site internet, le mandat et les documents commerciaux du prestataire : sa mention est obligatoire.</li>
+    <li>Vérifiez qu'il porte bien la mention « Gestion immobilière » : une carte « Transaction » seule ne permet pas de gérer une location.</li>
+    <li>Repérez le nom de l'organisme qui délivre la garantie financière et l'assurance RC Pro.</li>
+    <li>Demandez un mandat de gestion écrit, qui détaille les missions confiées et les honoraires.</li>
+  </ol>
+
+  <p>En cas de doute, la CCI qui a délivré la carte peut confirmer sa validité.</p>
+
+  <h2>Maison Néréa : la gestion complète, dans un cadre sécurisé</h2>
+
+  <p>Maison Néréa est titulaire de la carte professionnelle Gestion immobilière n° CPI 1702 2026 000 000 016, délivrée par la CCI de La Rochelle. Notre garantie financière et notre assurance responsabilité civile professionnelle sont souscrites auprès de GALIAN-SMABTP.</p>
+
+  <p>Concrètement, cela nous permet de prendre en charge l'intégralité de votre location saisonnière sur l'Île de Ré : création et optimisation de vos annonces, ajustement des tarifs selon la saison, gestion des réservations, encaissement des loyers pour votre compte, accueil des voyageurs, ménage et linge, suivi technique et reporting régulier. Le tout avec un seul interlocuteur, présent sur l'île, et le même soin que nous apportons depuis plus de vingt ans — dans le yachting puis la location saisonnière — aux biens qu'on nous confie.</p>
+
+  <p>Vous préférez garder la main sur la location ? Notre formule d'intendance reste disponible : surveillance du bien, préparation de vos arrivées, coordination des artisans. <a href="../honoraires.html">Découvrir nos honoraires</a>.</p>
+
+  <div class="article-divider"></div>
+
+  <div class="article-author" aria-label="À propos de l'auteure">
+    <div class="article-author-avatar">
+      <img src="../portrait.jpg" alt="Anne-Sophie Le Lay" />
+    </div>
+    <div>
+      <p class="article-author-name">Anne-Sophie Le Lay</p>
+      <p class="article-author-role">Fondatrice · Maison Néréa</p>
+    </div>
+  </div>
+
+  <div class="article-cta" aria-label="Prise de contact">
+    <div>
+      <strong>Envie de confier votre location en toute sérénité ?</strong>
+      <p>Parlez-nous de votre bien à l'Île de Ré. Nous vous répondons sous 24h avec une proposition adaptée, sans engagement.</p>
+    </div>
+    <a href="../index.html#contact" class="btn btn-navy">Premier échange →</a>
+  </div>
+
+</article>
+
+<!-- ── ARTICLES SUIVANTS ── -->
+<section class="article-next" aria-labelledby="next-label">
+  <div class="article-next-inner">
+    <span class="article-next-label" id="next-label">Continuer la lecture</span>
+    <div class="article-next-grid">
+      <a href="confier-sa-residence-secondaire-ile-de-re.html" class="article-next-card">
+        <div class="article-next-card-img" style="background-image: url('../assets/blog/confier-bien-ile-de-re.jpg');"></div>
+        <div class="article-next-card-body">
+          <span class="article-next-tag">Propriétaires · Île de Ré</span>
+          <p class="article-next-title">Confier sa résidence secondaire à l'Île de Ré : ce qu'il faut savoir</p>
+        </div>
+      </a>
+      <a href="reglementation-meubles-tourisme-ile-de-re.html" class="article-next-card">
+        <div class="article-next-card-img" style="background-image: url('../assets/Entre%CC%81e-jardin.png');"></div>
+        <div class="article-next-card-body">
+          <span class="article-next-tag">Propriétaires · Réglementation</span>
+          <p class="article-next-title">Réglementation des meublés de tourisme à l'Île de Ré : où en est-on en 2026 ?</p>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ── FOOTER ── -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div class="footer-logo-mark">MN</div>
+      <div>
+        <div class="footer-name">Maison Néréa</div>
+        <div class="footer-sub">Conciergerie & Intendance Premium</div>
+      </div>
+    </div>
+    <div class="footer-links">
+      <a href="../index.html#concept">Concept</a>
+      <a href="../index.html#prestations">Prestations</a>
+      <a href="../blog.html">Guides</a>
+      <a href="../index.html#contact">Contact</a>
+    </div>
+    <div class="footer-copy">© 2026 Maison Néréa · Tous droits réservés<br />Carte professionnelle Gestion immobilière n° CPI 1702 2026 000 000 016 délivrée par la CCI de La Rochelle · Garantie financière et RC Pro : GALIAN-SMABTP, 89 rue La Boétie, 75008 Paris</div>
+  </div>
+</footer>
+
+<script>
+const navbar = document.getElementById('navbar');
+window.addEventListener('scroll', () => {
+  navbar.classList.toggle('scrolled', window.scrollY > 20);
+});
+const burger = document.getElementById('burger');
+const mobileMenu = document.getElementById('mobileMenu');
+burger.addEventListener('click', () => mobileMenu.classList.toggle('open'));
+</script>
+
+</body>
+</html>
